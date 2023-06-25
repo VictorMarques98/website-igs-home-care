@@ -9,7 +9,7 @@ import { BrowserRouter } from 'react-router-dom';
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <BrowserRouter basename="/redirecting">
+      <BrowserRouter basename="/contact">
         <App />
       </BrowserRouter>
     </ThemeProvider>

@@ -27,18 +27,13 @@ const Redirect = () => {
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
       >
-        <Typography
-          variant="h1"
-          sx={styles.title}
-          component={motion.h1}
-          variants={simpleFadeIn(0.65)}
-        >
-          <CircularProgress
-            size={80}
-            style={{color: '#fff', marginBottom: '1rem'}}
-          />
-          We are redirecting you to our contact...
-        </Typography>
+        <iframe
+          src="https://share.hsforms.com/1iGHff2pPSrqT19nzM15ENQnsl8v"
+          width="100%"
+          height="650px"
+          title="Contact Form"
+          style={{ maxWidth: '800px', borderRadius: '20px' }}
+        />
       </Container>
     </Box>
   )

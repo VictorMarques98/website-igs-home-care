@@ -69,7 +69,7 @@ const Introduction = () => {
           </Button>
           <Link
             sx={styles.ctaButton}
-            href="https://igshomecare.com.au/redirecting/"
+            href="https://igshomecare.com.au/contact/"
           >
             Request an estimate
           </Link>

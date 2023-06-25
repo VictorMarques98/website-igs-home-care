@@ -18,7 +18,7 @@ const Footer = () => {
         <Box sx={styles.contactContainer}>
           <Link
             sx={styles.contactLink}
-            href="https://igshomecare.com.au/redirecting/"
+            href="https://igshomecare.com.au/contact/"
           >
             Call us: 0421697161
           </Link>

@@ -16,7 +16,7 @@ function FloatingActionButton() {
     >
       <Link
         sx={styles.button}
-        href="https://igshomecare.com.au/redirecting/"
+        href="https://igshomecare.com.au/contact/"
       >
         <CallIcon sx={{ mr: 1 }} />
         Contact us

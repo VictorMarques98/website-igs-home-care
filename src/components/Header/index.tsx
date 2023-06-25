@@ -19,12 +19,13 @@ function Header() {
     threshold: 0,
     target: window ? window : undefined
   });
+  const isMobile = window.innerWidth <= 768;
 
   return (
     <AppBar
       position="fixed"
       sx={styles.appBar}
-      style={trigger ? { backgroundColor: "#fff", boxShadow: "#000 0px 8px 14px -10px" } : {}}
+      style={trigger || isMobile ? { backgroundColor: "#fff", boxShadow: "#000 0px 8px 14px -10px" } : {}}
       component={motion.header}
       viewport={{ once: false, amount: 1 }}
       initial="hidden"
@@ -40,23 +41,23 @@ function Header() {
             component="img"
             sx={styles.logo}
             alt="igs home care logo"
-            src={trigger ? "/logo.webp" : "/logo-white.webp"}
+            src={trigger || isMobile ? "/logo.webp" : "/logo-white.webp"}
           />
           <Typography
             variant="h6"
             component="a"
             href="/"
             sx={styles.logoName}
-            style={trigger ? { color: '#1ec2e7' } : {}}
+            style={trigger || isMobile ? { color: '#1ec2e7' } : {}}
           >
             IGS HOME CARE
           </Typography>
           <Typography
             variant="h6"
             component="a"
-            href="/redirecting"
+            href="/contact"
             sx={styles.callNumber}
-            style={trigger ? { color: '#2a7d2e' } : {}}
+            style={trigger || isMobile ? { color: '#2a7d2e' } : {}}
           >
             Call Us: +0421697161
           </Typography>
